@@ -98,7 +98,8 @@ var Switch = function (_React$Component) {
             ref: 'switch',
             type: 'checkbox',
             onClick: this.onChange,
-            defaultChecked: this.props.checked
+            defaultChecked: this.props.checked,
+            name: this.props.name
           })
         )
       );
@@ -119,7 +120,8 @@ Switch.propTypes = {
   required: _react2.default.PropTypes.bool,
   checked: _react2.default.PropTypes.bool,
   options: _react2.default.PropTypes.object,
-  onChange: _react2.default.PropTypes.func
+  onChange: _react2.default.PropTypes.func,
+  name: _react2.default.PropTypes.string,
 };
 
 /**
