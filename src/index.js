@@ -60,6 +60,7 @@ class Switch extends React.Component {
             type="checkbox"
             onClick={this.onChange}
             defaultChecked={this.props.checked}
+            name={this.props.name}
           />
         </div>
       </div>
@@ -77,6 +78,7 @@ Switch.propTypes = {
   checked: React.PropTypes.bool,
   options: React.PropTypes.object,
   onChange: React.PropTypes.func,
+  name: React.PropTypes.string,
 };
 
 /**
